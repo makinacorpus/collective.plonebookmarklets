@@ -1,0 +1,30 @@
+Changelog
+=========
+
+next
+----------------
+
+  * move from skindirs to browser resources [toutpt]
+  * cleanup templates: remove scripts and python calls [toutpt]
+  * move docs from the module to egg's metadatas [toutpt]
+  * add metadata to default profile [toutpt]
+  * Remove five:traversable already deprecated with Zope2.10 [toutpt]
+  * fix import error on PLone4 of formfieldsets
+
+2.1.3
+----------------
+
+  * Modified JQuery variable to mitigate namespace conflicts
+  * edited icon url paths
+
+2.1.2
+----------------
+
+  * Added z-index to toggledBookmarks to ensure list has visibility priority
+
+2.1.1
+----------------
+
+  * Updated JS show/hide function to JQuery call
+  * Added Twitter to bookmarks
+

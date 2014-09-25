@@ -1,0 +1,23 @@
+<tal:block>
+  <tal:variables define="sites view/getSites;
+                         portal_url here/portal_url;
+                         pageTitle here/Title;">
+    <ul i18n:domain="PloneBookmarklets" style="margin-top:10px;">
+      <tal:sites repeat="site sites">
+        <li tal:define="siteName python:site[0];
+                        siteUrl python:view.getSiteUrl(site[1]);
+                        siteIcon python:site[2]">
+          <a href=""
+             title=""
+             class="link-plain"
+             tal:attributes="href python:siteUrl;
+                             title string:$siteName - $pageTitle">
+            <img src=""
+                 alt=""
+                 tal:attributes="alt siteName;
+                                 src string:$portal_url/++resource++plonebookmarklets/$siteIcon;" /></a>
+        </li>
+      </tal:sites>
+  </ul>
+  </tal:variables>
+</tal:block>
